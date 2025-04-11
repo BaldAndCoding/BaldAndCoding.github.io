@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Example Post</title>
+    <link rel="stylesheet" href="../assets/styles.css"> 
+  </head>
+  <body>
+    <h1>Flavorful 404</h1>
+
+    <h2>An Example Post</h2>
+
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis mollis orci, vel venenatis dui lacinia eu. Aenean vestibulum molestie vestibulum. Vestibulum metus sapien, condimentum mollis consectetur vitae, aliquam sit amet felis. Suspendisse eu nunc at urna fermentum viverra id suscipit dui. Nullam lacinia elit et dui accumsan sodales. Duis volutpat pellentesque purus. Morbi ligula velit, congue eu cursus non, laoreet sit amet ipsum. Sed pellentesque neque ipsum, ac mattis leo porttitor vel. Vestibulum porttitor mi vel orci ultrices, id placerat velit vulputate.
+  </p>
+
+  <p>
+Proin imperdiet lorem neque, in commodo nisl facilisis quis. Pellentesque tincidunt tortor risus, in ultricies tortor blandit non. Nullam aliquet nisl in sapien blandit, sit amet euismod quam tristique. Nulla at purus ac metus viverra sagittis eget a leo. Sed pharetra, nisi sed rutrum rutrum, sapien justo bibendum nisi, vel iaculis tortor ex et leo. Duis interdum semper neque maximus accumsan. Nulla vel luctus odio.
+</p>
+<p>
+Sed dui leo, convallis vel ultrices at, dapibus a sapien. Sed dapibus vestibulum pellentesque. Vestibulum luctus pellentesque justo, nec suscipit magna ornare non. Vestibulum quis arcu lobortis, fringilla orci ac, pharetra turpis. Proin fringilla tristique urna non molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu est ac turpis luctus tempor. Phasellus eleifend ligula nisl, sed dictum nibh porttitor ac. Donec nulla orci, blandit vulputate pretium ac, faucibus sit amet lectus. Vestibulum a volutpat elit. Pellentesque dictum blandit leo. Fusce vitae commodo velit.
+</p>
+<pre>
+    public class Car {
+        // Attributes (fields)
+        private String brand;
+        private String model;
+        private int year;
+        private boolean isRunning;
+    
+        // Constructor
+        public Car(String brand, String model, int year) {
+            this.brand = brand;
+            this.model = model;
+            this.year = year;
+            this.isRunning = false; // Default value
+        }
+    
+        // Methods
+        public String getBrand() {
+            return brand;
+        }
+    
+        public void setBrand(String brand) {
+            this.brand = brand;
+        }
+    
+        public String getModel() {
+            return model;
+        }
+    
+        public void setModel(String model) {
+            this.model = model;
+        }
+    
+        public int getYear() {
+            return year;
+        }
+    
+        public void setYear(int year) {
+            this.year = year;
+        }
+    
+        public boolean isRunning() {
+            return isRunning;
+        }
+    
+        public void start() {
+            if (!isRunning) {
+                isRunning = true;
+                System.out.println("Car started.");
+            } else {
+                System.out.println("Car is already running.");
+            }
+        }
+    
+        public void stop() {
+            if (isRunning) {
+                isRunning = false;
+                System.out.println("Car stopped.");
+            } else {
+                System.out.println("Car is already stopped.");
+            }
+        }
+    
+        // Main method for testing
+        public static void main(String[] args) {
+            // Creating an object of the Car class
+            Car myCar = new Car("Toyota", "Camry", 2022);
+    
+            // Accessing attributes and calling methods
+            System.out.println("Brand: " + myCar.getBrand());
+            System.out.println("Model: " + myCar.getModel());
+            System.out.println("Year: " + myCar.getYear());
+    
+            myCar.start(); // Start the car
+            System.out.println("Is car running? " + myCar.isRunning());
+            myCar.stop(); // Stop the car
+            System.out.println("Is car running? " + myCar.isRunning());
+        }
+    } 
+</pre>
+
+<p>
+In vitae suscipit justo. Aenean euismod sapien in lorem ullamcorper, at bibendum mauris volutpat. Etiam vel sollicitudin mauris, eget lacinia leo. Nam congue imperdiet risus, hendrerit semper velit vulputate a. Fusce tempus metus sit amet augue dapibus, quis congue urna ullamcorper. Proin ullamcorper est fringilla tempus egestas. Vivamus in neque neque. Ut ac consequat nisi. Praesent venenatis convallis nibh at gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas cursus volutpat lectus, sed mollis urna efficitur nec. Nullam dignissim pellentesque ex, sit amet vehicula odio tempus in. Sed cursus efficitur facilisis.
+</p>
+<p>
+Donec nunc orci, scelerisque accumsan accumsan vel, ornare semper justo. Mauris vitae odio ac velit eleifend cursus id in tellus. Maecenas nec urna quis nulla dictum bibendum. Ut in libero non magna aliquet gravida ut a eros. Curabitur lobortis nunc tortor, hendrerit dictum purus pellentesque quis. Maecenas id vehicula nibh, id sagittis metus. Praesent dictum lorem convallis scelerisque fringilla. Curabitur pellentesque eros eu nibh porttitor, eget pellentesque elit dictum. Vivamus fringilla lacus semper blandit lacinia. Curabitur venenatis commodo accumsan. Donec leo justo, tincidunt at ipsum eu, lacinia malesuada est. Morbi consequat est dui, nec convallis mauris ullamcorper sit amet. Nulla vitae massa nec justo laoreet pretium. Quisque id tellus sed metus maximus tempor in sit amet magna. Suspendisse ut scelerisque leo.
+</p>  
+  </body>
+</html>
