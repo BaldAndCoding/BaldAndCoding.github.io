@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Make an HTML Button Not Look Terrible</title>
+    <link rel="stylesheet" href="../assets/styles.css"> 
+  </head>
+  <body>
+    <h1>How to Make an HTML Button Not Look Terrible</h1>
+    <p>April 19 2025</p>
+
+   <p>
+    HTML buttons are notoriously ugly by default. Let's fix that with a few progressive 
+    enhancements—building from a raw <code>&lt;button&gt;</code> element into something 
+    polished and usable.
+   </p>
+
+   <h2>Step 1: Basic Color</h2>
+
+   <p>We'll start by giving our button a nice blue background and white text:</p>
+   
+<pre>
+.btn {
+    background-color: #2f8ecc;
+    color: #fff;
+}
+</pre>
+
+   <h2>Step 2: Typography</h2>
+
+   <p>Let's make the text a bit more readable by setting a 
+    font and increasing the size. You can also use <code>font-family: inherit</code> 
+    if your body or container already has a nice font.</p>
+ 
+ <pre>
+.btn {
+    background-color: #2f8ecc;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+}
+</pre>
+
+   <h2>Step 3: Border and Radius</h2>
+
+    <p>Next, we'll remove the default border and round the corners slightly.</p>
+
+<pre>
+.btn {
+    background-color: #2f8ecc;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    border: 0;
+    border-radius: 6px;
+}
+</pre>
+
+  <h2>Step 4: Padding</h2>
+
+   <p>We'll add some padding to make the button feel more balanced. Top 
+    and bottom padding is half the font size; left and right give the 
+    text some breathing room.</p>
+   
+<pre>
+.btn {
+    background-color: #2f8ecc;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    border: 0;
+    border-radius: 6px;
+    padding: 8px 30px;
+}
+</pre>
+
+   <h2>Step 5: Spacing</h2>
+   
+   <p>To avoid the buttons being too cramped when placed together, we add a 
+    small margin.</p>
+   
+<pre>
+   .btn {
+     /* ... previous styles ... */
+     margin: 5px;
+   }
+</pre>
+
+   <h2>Step 6: Disabled State</h2>
+   
+   <p>>We don't want disabled buttons to look the same as active ones. Here we 
+    change their appearance using the <code>:disabled</code> pseudo-selector.</p>
+  
+<pre>
+.btn:disabled {
+    background-color: #cfcfcf;
+    opacity: 0.9;
+}
+</pre>
+
+   <h2>Step 7: Cursor Behavior</h2>
+
+   <p>Add cursor feedback: a pointer for active buttons, and a <code>not-allowed</code>
+    icon for disabled ones.</p>
+   
+<pre>
+.btn {
+    /* ... previous styles ... */
+    cursor: pointer;
+}
+
+.btn:disabled {
+    background-color: #cfcfcf;
+    opacity: 0.9;
+    cursor: not-allowed;
+}
+</pre>
+
+   <h2>Step 8: Click Feedback</h2>
+   
+   <p>Let's add a little visual feedback when the button is pressed. A 
+    subtle scale transform gives a satisfying “click” feel.</p>
+ 
+<pre>
+.btn:active {
+    transform: scale(0.95);
+}
+</pre>
+
+   <p>However, this applies even to disabled buttons—which we don't want. So we scope 
+    it to only apply when the button is enabled:</p>
+   
+    <pre>
+.btn:enabled:active {
+    transform: scale(0.95);
+}
+    </pre>
+
+   <h2>Step 9: Focus Cleanup</h2>
+  
+   <p>Finally, let's remove the default focus outline:</p>
+   
+   <pre>
+.btn:focus {
+    outline: 0;
+}
+    </pre>
+   
+    <p>You might want to add your own custom focus style for accessibility 
+        later. For now, this just cleans things up visually.</p>
+
+   <h2>Done</h2>
+  
+   <p>That's it! A clean, functional button with minimal code and clear 
+    behavior. You can always build on this—add hover states, animations, or 
+    theme variations—but this is a solid baseline.</p>
+  </body>
+</html>
